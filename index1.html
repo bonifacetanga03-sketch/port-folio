@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Food HT | Restaurant Premium</title>
+    <meta name="description" content="Cuisine raffinée, commande en ligne, réservation et suivi premium." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="container nav-row">
+          <a href="#accueil" class="brand">
+            <span class="brand-mark">ME</span>
+            <span>The Food HT</span>
+          </a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+            <span></span><span></span><span></span>
+          </button>
+          <nav class="nav-links" id="navLinks">
+            <a href="#accueil">Accueil</a>
+            <a href="#menu">Menu</a>
+            <a href="#reservation">Réservation</a>
+            <a href="#commande">Commande</a>
+            <a href="#suivi">Suivi</a>
+            <a href="#admin">Admin</a>
+          </nav>
+          <div class="nav-actions">
+            <button class="icon-btn" id="themeToggle" aria-label="Basculer le thème">☀︎</button>
+            <a class="pill-btn" href="#commande">Panier <span id="cartCount">0</span></a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="accueil">
+          <div class="hero-overlay"></div>
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">Cuisine d’exception • Service premium</p>
+              <h1>Une expérience gastronomique à la hauteur de vos envies.</h1>
+              <p>Découvrez des créations raffinées, un service ultra fluide et une ambiance élégante, du déjeuner de travail au dîner signature.</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#menu">Commander maintenant</a>
+                <a class="btn btn-secondary" href="#reservation">Réserver une table</a>
+              </div>
+              <div class="hero-stats">
+                <div>
+                  <strong>4.9/5</strong>
+                  <span>avis clients</span>
+                </div>
+                <div>
+                  <strong>25 min</strong>
+                  <span>préparation</span>
+                </div>
+                <div>
+                  <strong>24/7</strong>
+                  <span>service</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-card">
+              <div class="card-glass">
+                <p class="eyebrow">Aujourd’hui</p>
+                <h3>Signature du soir</h3>
+                <p>Filet de bœuf grillé, purée de patate douce, réduction au poivre noir et éclats de truffe.</p>
+                <div class="hero-card-footer">
+                  <span>Élégant • Intense • Réconfortant</span>
+                  <strong>24 890 FCFA</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section container intro-grid">
+          <div>
+            <p class="eyebrow">Notre philosophie</p>
+            <h2>Une cuisine soignée, un service premium, une expérience mémorable.</h2>
+            <p>Chez Maison Étoile, nous mélangeons tradition, innovation et élégance pour créer des plats qui ravissent les sens.</p>
+          </div>
+          <div class="feature-cards">
+            <article class="mini-card">
+              <h3>Produits frais</h3>
+              <p>Ingrédients sélectionnés chaque matin pour une qualité optimale.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Livraison rapide</h3>
+              <p>Prise en charge fluide et suivi en temps réel à chaque étape.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Fidélité premium</h3>
+              <p>Accumulez des points et profitez d’offres exclusives.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section container" id="menu">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Notre menu</p>
+              <h2>Des plats qui séduisent à chaque bouchée.</h2>
+            </div>
+            <div class="search-row">
+              <input id="searchInput" type="search" placeholder="Rechercher un plat..." />
+            </div>
+          </div>
+
+          <div class="filters" id="filters"></div>
+          <div class="menu-grid" id="menuGrid"></div>
+        </section>
+
+        <section class="section container split-layout" id="reservation">
+          <div class="panel">
+            <p class="eyebrow">Réservation</p>
+            <h2>Réservez votre table élégamment.</h2>
+            <form class="stack-form" id="reservationForm">
+              <label>
+                Date
+                <input type="date" id="resDate" required />
+              </label>
+              <label>
+                Heure
+                <select id="resTime">
+                  <option>19:00</option>
+                  <option>19:30</option>
+                  <option>20:00</option>
+                  <option>20:30</option>
+                </select>
+              </label>
+              <label>
+                Nombre de personnes
+                <input type="number" id="resGuests" min="1" max="10" value="2" />
+              </label>
+              <label>
+                Salle
+                <select id="resRoom">
+                  <option>Terrasse</option>
+                  <option>Salon principal</option>
+                  <option>VIP</option>
+                </select>
+              </label>
+              <label>
+                Occasion
+                <input type="text" id="resOccasion" placeholder="Anniversaire, dîner d’affaires..." />
+              </label>
+              <button class="btn btn-primary" type="submit">Vérifier la disponibilité</button>
+            </form>
+          </div>
+          <div class="panel highlight-panel">
+            <p class="eyebrow">Disponibilité</p>
+            <h3 id="availabilityText">2 tables premium disponibles pour votre créneau.</h3>
+            <ul class="availability-list">
+              <li>✓ Service personnalisé</li>
+              <li>✓ Menu dégustation à la demande</li>
+              <li>✓ Accueil champagne à l’arrivée</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section container split-layout" id="commande">
+          <div class="panel">
+            <p class="eyebrow">Votre commande</p>
+            <h2>Un panier clair, rapide et sans friction.</h2>
+            <div id="cartItems" class="cart-items"></div>
+          </div>
+          <div class="panel summary-panel">
+            <p class="eyebrow">Résumé</p>
+            <div class="summary-row"><span>Sous-total</span><strong id="subtotal">0 FCFA</strong></div>
+            <div class="summary-row"><span>Livraison</span><strong>3 275 FCFA</strong></div>
+            <div class="summary-row"><span>Coupon</span><strong>− 0 FCFA</strong></div>
+            <div class="summary-row total"><span>Total</span><strong id="total">3 275 FCFA</strong></div>
+            <button class="btn btn-primary full" id="checkoutBtn">Payer maintenant</button>
+            <div class="payment-options">
+              <span>Carte</span>
+              <span>Apple Pay</span>
+              <span>Mobile Pay</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section container" id="suivi">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Suivi de commande</p>
+              <h2>Un suivi transparent, de la cuisine à la livraison.</h2>
+            </div>
+            <button class="btn btn-secondary" id="trackToggle">Voir le statut</button>
+          </div>
+          <div class="timeline" id="timeline">
+            <div class="timeline-step active"><span>01</span><h3>Commande reçue</h3></div>
+            <div class="timeline-step"><span>02</span><h3>En préparation</h3></div>
+            <div class="timeline-step"><span>03</span><h3>Prête</h3></div>
+            <div class="timeline-step"><span>04</span><h3>En livraison</h3></div>
+            <div class="timeline-step"><span>05</span><h3>Livrée</h3></div>
+          </div>
+        </section>
+
+        <section class="section container profile-grid" id="profil">
+          <div class="panel">
+            <p class="eyebrow">Profil client</p>
+            <div class="profile-card">
+              <div class="avatar">AL</div>
+              <div>
+                <h3>Alicia Laurent</h3>
+                <p>Premium • 1280 pts</p>
+              </div>
+            </div>
+            <div class="stats-grid">
+              <div class="stat-box"><strong>12</strong><span>Commandes</span></div>
+              <div class="stat-box"><strong>4</strong><span>Réservations</span></div>
+              <div class="stat-box"><strong>6</strong><span>Favoris</span></div>
+            </div>
+          </div>
+          <div class="panel">
+            <p class="eyebrow">Notifications</p>
+            <ul class="notification-list">
+              <li>Votre commande #4821 est en préparation.</li>
+              <li>Nouvelle offre : 15 % sur les desserts ce week-end.</li>
+              <li>Votre réservation du vendredi est confirmée.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section container" id="admin">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Administration</p>
+              <h2>Tableau de bord professionnel et clair.</h2>
+            </div>
+          </div>
+          <div class="stats-grid admin-grid">
+            <div class="stat-box"><strong>+24%</strong><span>Ventes</span></div>
+            <div class="stat-box"><strong>184</strong><span>Commandes</span></div>
+            <div class="stat-box"><strong>56</strong><span>Réservations</span></div>
+            <div class="stat-box"><strong>17</strong><span>Produits actifs</span></div>
+          </div>
+          <div class="table-card">
+            <table>
+              <thead>
+                <tr><th>Produit</th><th>Ventes</th><th>Revenus</th><th>Stock</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Filet de bœuf</td><td>42</td><td>1 045 380 FCFA</td><td>12</td></tr>
+                <tr><td>Risotto truffé</td><td>29</td><td>684 475 FCFA</td><td>8</td></tr>
+                <tr><td>Tarte chocolat</td><td>37</td><td>484 700 FCFA</td><td>5</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section container gallery-grid">
+          <article class="gallery-card tall"></article>
+          <article class="gallery-card"></article>
+          <article class="gallery-card"></article>
+          <article class="gallery-card wide"></article>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div>
+            <h3>The Food HT</h3>
+            <p>Restaurant premium, commande en ligne et expérience client exceptionnelle.</p>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p>+237 697 15 94 02</p>
+            <p>bonifacetanga03@gmail.com</p>
+          </div>
+          <div>
+            <h3>Horaires</h3>
+            <p>Lun–Ven : 12h–23h</p>
+            <p>Sam–Dim : 11h–00h</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="toast" id="toast"></div>
+    <script src="main1.js"></script>
+  </body>
+</html>

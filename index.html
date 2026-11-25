@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PorteFolio</title>
+    <script>try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"> PortFolio</a>
+
+        <nav  class="navbar">
+            <a href="#home" style="--i:1" class="active">Accueil</a>
+            <a href="#about" style="--i:2">À propos</a>
+            <a href="#services" style="--i:3">Services</a>
+            <a href="#Skills" style="--i:4">Portfolio</a>
+            <a href="#contact" style="--i:5">Contact</a>
+
+        </nav>
+         <button type="button" class="theme-toggle" aria-label="Thème sombre" aria-pressed="false">
+            <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+         </button>
+         <!-- menu responsive -->
+         <div class="toggle_navbar">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Bonjour, je suis</h3>
+            <h1>Tanga Boniface</h1>
+            <h3>Et je suis <span id="text"></span></h3>
+            <p> Je suis un developpeur apprentir a l'universite des grandes ecole des tropique (IUGET) 
+                <br>j'ai quelque notion en programmation mobile , mais mon domaine clé et plus centre sur la programmation web. </p>
+            <div class="home-sci">
+                <a href="https://www.facebook.com/BonifaceTanga" target="_blank" rel="noopener noreferrer" style="--i:7"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/BonifaceTanga/" target="_blank" rel="noopener noreferrer" style="--i:8"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://wa.me/237697159402" target="_blank" rel="noopener noreferrer" style="--i:9"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="https://www.tiktok.com/@BonifaceTanga" target="_blank" rel="noopener noreferrer" style="--i:10"><i class='bx bxl-tiktok' ></i></a>
+
+                </div>
+                <a href="#" class="btn-box"> Voir plus</a>
+
+            </div>
+            <div class="main-container">
+                <div class="wrapper">
+                    <img src="boni.jpeg" alt="Photo de profil" class="profile-image">
+                </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="boni.jpeg" alt="Photo de profil">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Développeur web</h4>
+            <p> Je me nomme TANGA BONIFACE ANDY apprenti 
+                développeur qui vient tout juste de commencer
+                sa formation à l'université des grandes écoles des tropiques (IUGET).
+                Étudiant en Génie logiciel (GL) j'ai une maîtrise dans
+                les langages front tels que HTML, CSS, JavaScript.
+                J'ai déjà eu à travailler sur certains projets 
+                (création d'un site animé, création d'un site de restaurant ...)
+            </p>
+            <a href="#" class="btn-box">Voir plus </a>
+        </div>
+    </section>
+
+    <section>
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">Mes <span>services</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class='bx bx-palette' aria-hidden='true'></i>
+                        <h2>Création</h2>
+                        <p>J'ai quelques bases dans les applications de web graphique telles que Photoshop 
+                            , Adobe Illustrator et Canva. J'ai déjà créé de petites affiches et logos plutôt 
+                            basiques mais passables dans l'ensemble .</p>
+                        <p>j'ai quelque base dans les application de web graphique telque photoshop 
+                            , adote illustrator et canva. j'ai deja creer de petit affiche et logo plutôt 
+                            basique mais passable dans l'ensemble .</p>
+                            <a href="#" class="read">Voir plus</a>
+                    </div>
+                    <div>
+                        <i class='bx bx-code-alt' aria-hidden='true'></i>
+                        <h2>Developpeur Web</h2>
+                        <p>je me nomme TANGA BONIFACE ANDY apprentir 
+                    developpeur qui vient tout juste de commencer
+                    sa formation a l'universite des grandes écoles des tropiques (IUGET).
+                    Etudiant en Genie logiciel(GL) j'ai une maitrise dans
+                    les langages front telque Html, Css, javascript.
+                    j'ai deja eu a travailler sur certains projets 
+                    (creation d'un site animes, creation d'un site de resto ...)</p>
+                            <a href="#" class="read">Voir plus</a>
+                    </div>
+                    <div>
+                        <i class='bx bx-spreadsheet' aria-hidden='true'></i>
+                        <h2>traitement</h2>
+                        <p> j'ai des petit notion dans les logiciel de traitement de 
+                            texte telque word, excel , Powerpoint...  </p>
+                            <a href="#" class="read">voir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 class="sub-title">Mes <span>compétences</span></h1>
+
+    <section>
+        <div class="container" id="Skills">
+            <h1 class="heading1">Compétences Techniques</h1>
+            <div class="Technical-bars">
+                <div class="bar"><i style="color: #c95d2e" class='bx bxl-html5'></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color: #147bbc" class="bx bxl-css3"></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color: #b0bc1e" class='bx bxl-javascript'></i>
+                    <div class="info">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="progress-line javascript">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color: #c32ec9" class='bx bxl-php'></i>
+                    <div class="info">
+                        <span>PHP</span>
+                    </div>
+                    <div class="progress-line php">
+                        <span></span>
+                    </div> 
+                </div>
+                <div class="bar"><i style="color: #69bcbc" class='bx bxl-java'></i>
+                    <div class="info">
+                        <span>JAVA</span>
+                    </div>
+                    <div class="progress-line java">
+                        <span></span>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="container1">
+            <h1 class="heading1">Mes qualités techniques</h1>
+            <div class="radial-bars">
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>  
+                    <div class="percentage">50%</div>
+                    <div class="text">créativité</div>
+                </div>
+                <div class="radial-bar">
+        
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                    </svg>  
+                    <div class="percentage">70%</div>
+                    <div class="text">communication</div>
+                </div>
+                <div class="radial-bar">
+        
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>  
+                    <div class="percentage">30%</div>
+                    <div class="text">gestion de problèmes</div>
+                </div>
+                <div class="radial-bar">
+        
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                    </svg>  
+                    <div class="percentage">55%</div>
+                    <div class="text">niveau expérience</div>
+                </div>
+        </div>
+        </div>
+    </section>
+    <section>
+        <div class="PortFolio" id="project">
+            <div class="main-text">
+                <h2>Mes <span>projets</span></h2>
+
+                <div class="portFolio-content">
+                    <div class="row">
+                        <img loading="lazy" src="capture-d-ecran-2026-04-14-121023.png">
+                        <div class="layer">
+                            <h5>UI/UX</h5>
+                            <p>Mon cv professionnel realiser par moi</p>
+    
+                                <a href="index2.html"> <i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img loading="lazy" src="e-comerce.png">
+                        <div class="layer">
+                            <h5>UI/UX</h5>
+                            <p>Nos article
+                                AFICAN SHOPPING</p>
+    
+                                <a href="index3.html" data-viewer="Site e-commerce"> <i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img loading="lazy" src="centre.png" >
+                        <div class="layer">
+                            <h5>UI/UX</h5>
+                            <p>SERVICE PUBLIC NUMÉRIQUE
+                               Vos démarches d'état civil,
+                                plus simplement.
+                                Demandez vos documents, suivez votre dossier et vérifiez l'authenticité de vos actes en toute sécurité.</p>
+    
+                                <a href="index4.html#verification" data-viewer="État civil numérique"><i class='bx bx-link-external' style="color:aliceblue;"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img loading="lazy" src="resto.png" >
+                        <div class="layer">
+                            <h5>UI/UX</h5>
+                            <p>Cuisine d’exception • Service premium
+                               Une expérience gastronomique à la hauteur de vos envies.
+                                Découvrez des créations raffinées, un service ultra fluide et une ambiance élégante, du déjeuner de travail au dîner signature.</p>
+    
+                                <a href="index1.html" data-viewer="Application de restaurant"><i class='bx bx-link-external' style="color:aliceblue;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section class="certificates-section">
+        <div class="container">
+            <h2 class="section-title">Mes certifications Cisco</h2>
+            <div class="certificates-grid">
+                <div class="certificates-card">
+                    <div class="cert-header">
+                        <span class="cert-badge">Cisco</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>HTML Essentials</h3>
+                        <p class="cert-date">31 mars 2026</p>
+                        <p class="cert-id">liens </p>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="provider"><a href="html-essentials.pdf" target="_blank" rel="noopener noreferrer">ouvrir le fichier</a></span>
+                    </div>
+                </div>
+
+                <div class="certificates-card">
+                    <div class="cert-header">
+                        <span class="cert-badge">Cisco</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>CSS Essentials</h3>
+                        <p class="cert-date">8 Avril 2026</p>
+                        <p class="cert-id">liens </p>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="provider"><a href="css-essentials.pdf" target="_blank" rel="noopener noreferrer">ouvrir le fichier</a></span>
+                    </div>
+                </div>
+
+                <div class="certificates-card">
+                    <div class="cert-header">
+                        <span class="cert-badge">Cisco</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>JavaScript 1 Essentials</h3>
+                        <p class="cert-date">9 Avril 2026</p>
+                        <p class="cert-id">liens </p>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="provider"><a href="javascript-essentials-1.pdf" target="_blank" rel="noopener noreferrer">ouvrir le fichier</a></span>
+                    </div>
+                </div>
+
+                <div class="certificates-card">
+                    <div class="cert-header">
+                        <span class="cert-badge">Cisco</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>JavaScript 2 Essentials</h3>
+                        <p class="cert-date">10 Avril 2026</p>
+                        <p class="cert-id">liens </p>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="provider"><a href="JavaScript_Essentials_2_certificate_bonifacetanga03-gmail-com_4220b581-ba8d-41c9-a5e3-9cf425d66e35.pdf">ouvrir le fichier</a></span>
+                    </div>
+                </div>
+
+                <div class="certificates-card">
+                    <div class="cert-header">
+                        <span class="cert-badge">Cisco</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>English for IT 1</h3>
+                        <p class="cert-date">05 février 2026</p>
+                        <p class="cert-id">liens </p>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="provider"><a href="english-for-it-1.pdf" target="_blank" rel="noopener noreferrer">ouvrir le fichier</a></span>
+                    </div>
+                </div>
+
+                <div class="certificates-card">
+                    <div class="cert-header">
+                        <span class="cert-badge">Cisco</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>English for IT 2</h3>
+                        <p class="cert-date">18 février 2026</p>
+                        <p class="cert-id">liens </p>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="provider"><a href="english-for-it-2.pdf" target="_blank" rel="noopener noreferrer">ouvrir le fichier</a></span>
+                    </div>
+                </div>
+
+                <div class="certificates-card">
+                    <div class="cert-header">
+                        <span class="cert-badge">Cisco</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>IT Customer Support Basics</h3>
+                        <p class="cert-date">19 janvier 2026</p>
+                        <p class="cert-id">liens </p>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="provider"><a href="it-customer-support-basics.pdf" target="_blank" rel="noopener noreferrer">ouvrir le fichier</a></span>
+                    </div>
+                </div>
+
+                <div class="certificates-card">
+                    <div class="cert-header">
+                        <span class="cert-badge">Cisco</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>Introduction à la Cybersécurité</h3>
+                        <p class="cert-date">24 février 2026</p>
+                        <p class="cert-id">liens </p>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="provider"><a href="introduction-to-cybersecurity.pdf" target="_blank" rel="noopener noreferrer">ouvrir le fichier</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>moi</span></h2>
+            <h4>Coordonnées personnelles</h4>
+            <p>En cas de service et tache requise je suis pres a tout offre si et selement si cette
+                cette tache concerne de que que se soit l'informatique ou se rapprochant a un de ces branche
+                dans la vision d'acquerire de nouvelles conpetences et d'approffondire mon savoir.
+            </p>
+                 <div class="contact-list">
+                    <li><i class= 'bx bxs-send'></i>bonifacetanga03@gmail.com</li>
+                    <li><i class='bx bxs-phone'></i>+237-697-159-402</li>
+                 </div>
+                 <div class="contact-icons">
+                    <a href="https://www.facebook.com/BonifaceTanga" target="_blank" rel="noopener noreferrer" style="--i:7"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.instagram.com/BonifaceTanga/" target="_blank" rel="noopener noreferrer" style="--i:8"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://wa.me/237697159402" target="_blank" rel="noopener noreferrer" style="--i:9"><i class='bx bxl-whatsapp' ></i></a>
+                    <a href="https://www.tiktok.com/@BonifaceTanga" target="_blank" rel="noopener noreferrer" style="--i:10"><i class='bx bxl-tiktok' ></i></a>
+                 </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+
+                <input type="text" placeholder="Sujet" required>
+                <textarea name="message" id="message" cols="10" rows="10" placeholder="Votre message" required></textarea>
+                <input type="submit" value="Envoyer" class="send">
+            </form>
+        </div>
+    </section>
+
+    <div class="last-text">
+        <p>Je suis un passionné du développement web</p>
+    </div>
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+
+        <footer>
+        <div class="services_list">
+
+            <div class="service">
+                <img src="th.webp" alt="Icône contact">
+                <h2>Adresses</h2>
+                <p>Cameroun-Douala-bependa</p>
+                <p>Cameroun-Douala-deido</p>
+            </div>
+
+            <div class="service">
+                <img src="th.webp" alt="Icône contact">
+                <h2>Email</h2>
+                <p>bonifacetanga03@gmail.com</p>
+                <p>portfolio@gmail.com</p>
+            </div>
+
+            <div class="service">
+                <img src="th.webp" alt="Icône contact">
+                <h2>Numéro</h2>
+                <p>+237 697159402</p>
+                <p>+237 694044081</p>
+            </div>
+
+            <hr>
+        </div>
+        <p class="footer_text">Réalisé par <span>Tanga Andy</span> - Tous droits réservés</p>
+    </footer>
+    <dialog class="viewer" id="viewer" aria-labelledby="viewer-title">
+        <div class="viewer-bar">
+            <h2 id="viewer-title"></h2>
+            <a class="viewer-new" id="viewer-new" href="about:blank" target="_blank" rel="noopener">Ouvrir dans un nouvel onglet</a>
+            <button type="button" class="viewer-close" aria-label="Fermer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="22" height="22"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+        </div>
+        <iframe id="viewer-frame" title="Aperçu du projet" src="about:blank"></iframe>
+    </dialog>
+
+    <script src="main.js"></script>
+</body>
+</html>
